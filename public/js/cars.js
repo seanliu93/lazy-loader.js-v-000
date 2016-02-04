@@ -5,7 +5,7 @@ var baseUrl = "http://mimeocarlisting.azurewebsites.net/api/cars/";
 
 function formatCars(cars) {
   var html = "<div class=\"row\">";
-  $.each(cars, function(index, car) {
+  cars.forEach(function(car) {
     html += "<div class=\"col-md-4 car\">";
     html += "<h2>" + car.Make + "</h2>";
     html += "<p><strong>Model:</strong> " + car.Model + "</p>";
